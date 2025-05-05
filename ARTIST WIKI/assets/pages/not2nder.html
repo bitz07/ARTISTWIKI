@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ArtistWiki - not2nder</title>
+        <link rel="stylesheet" href="../styles/global/global.css">
+    </head>
+    <body>
+        <header>
+            <a class="logo-name" href="../../index.html">ArtistWiki</a>
+            <ul>
+                <a href="#profile">Perfil</a>
+                <a href="#releases">Lançamentos</a>
+                <a href="#about">Sobre</a>
+            </ul>
+        </header>
+        <!-- 3 frações para o main, 1 fração para  -->
+        <div style="
+            display: grid;
+            grid-template-columns: 3fr 1fr">
+            <main>
+                <section class="profile">
+                    <div class="main">
+                        <div class="left">
+                            <img class="featured-image" id="verified" style="border-radius: 50%;" src="https://i.scdn.co/image/ab67616d00001e02f10b0a99fe8323b08b1010dc" alt="Imagem perfil not2nder">
+                        </div>
+                        <div class="right">
+                            <h2 class="artist-name">not2nder <img style="width: 28px; margin: 0;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Twitter_Verified_Badge_Gold.svg/768px-Twitter_Verified_Badge_Gold.svg.png?20230122072942" alt=""></h2>
+                            <span style="
+                                font-size: medium;
+                                color: var(--grey)">AKA: 2nder, Ander, Not Ander.</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="social">
+                        <div class="listen">
+                            <h3>Ouvir</h3>
+                            <ul>
+                                <li class="social-link">
+                                    <a href="https://www.youtube.com/channel/UCYneqmkqlHRkbInADINEPVQ" target="_blank"><img src="https://www.gstatic.com/kpui/listen/youtube_icon_44x44.png" alt="">YouTube</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://open.spotify.com/artist/4WB56sWCElzGrYSNcZgwro" target="_blank"><img src="https://www.gstatic.com/kpui/listen/spotify_44x44.png" alt="">Spotify</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://music.youtube.com/channel/UCpkf8PQeoA7gzwVb-dKiU1A" target="_blank"><img src="https://www.gstatic.com/kpui/listen/youtube_music_44x44.png" alt="">YT Music</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://music.apple.com/br/artist/not2nder/1735580732" target="_blank"><img src="https://www.gstatic.com/kpui/listen/apple_music_icon_44x44.png" alt="">Apple Music</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://music.amazon.com.br/artists/B0CV8M4BFM/not2nder?do=play&agent=googleAssistant&ref=dmm_seo_google_gkp_artists" target="_blank"><img src="https://www.gstatic.com/kpui/listen/amazon_music_44x44.png" alt="">Amazon Music</a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="https://www.deezer.com/br/artist/253733472" target="_blank"><img src="https://www.gstatic.com/kpui/listen/deezer_44X44.png" alt="">Deezer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profiles">
+                            <h3>Perfis</h3>
+                            <ul>
+                                <li class="social-link"><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADg0lEQVR4AWLMs+PUDbAA9F4PMNN0ZxzGf/eZ2d3HrG3bts2gCIuwtm1HtRvXbfxFteKUUe2+5s45d91NnuzU315jz/znmjnnTN64sV7WMjUrIEI5e66d/8zX58/vH3L9rTfe80aTB7qQhNWQmIXh2AX9Vjm26VeDdkGLEFZApiwzZSv6zT7bQBJEEBJhQSKOzI9P8W/uk2QOeg0V1WpfQUWjVxcLK6Wi0ks0q0+gQ9KrGFD9bwTSv8+ASq/9rwkEgmxA6ciG/NcJNHrNv+9ABJlABplE4bI3Z++QWvn9L/jD9ynogkxLWCJhHY9VBC2pSYcSzJOr30pe7Q7iQS9lfY+snPwVP7iEz7yYC7+jBJK0IFEWElJRjdOSrufgyhz7CRdS3v6J8nLXkZe9vm7rspSgJYdX585P4Qo35m33xsXl6daFhOP/gcRkxuWvp93ggazvcvGMOHtM27uKmG0TUyJQKAnkwLXvLB/+OvGxZ7Pb0epIAsscSCSiY//q6q2eINrAZFOWnrV9MdugX6d0jiI6EPd5Op96MSfP02ESlLT4EVE0VAxIDOi3MZPXuIN27buKmLC+z2xLzPbkdJPJOpMZpR8RrVE6Hvs2Hv82/nwzQ88cNZZIqHCsabe5L9MN+gmXuQ6zTda2mG7RT2mD0OjXZDRiSua4wfd8MlGA2zyaV96NWRJHJZw3edXrcLXbEIHg4CrIvxo+WafrgWx0U1GKzJAII0QgaQPXv6u891P54ns4KGRbJOAieccncngVBFHYPmSY/zWByYwIopAhI0V0DOeNgyhA6YHr3In5e6jJ4k9INIaf/0iZbgGlUKZcOM38IpM1SkcE/HlZSmoT2dDItJREG+g77YffURI1aLn4CrIruks+Ie/T0U3oJ5w9zTCw9gem6/SzhfVbe2Qy+asbICwnUDrz731D98V3sYGhHfkV11QmqX7rc2zsybUduXUgJN1Ulp6+o/REsLkv5xfpp2qdE2U8gQjte182+fRblBnZUJGLG2BIgu7kMf48NKQFR+YzCUD73AckwjglsBPUIBOoxmtEinGECADKLP+9gqwmkPBflIbL4/gvj4llpWFYDWnkFfy3NZ34L4NpVl4rHnGgoVktMZbAaMNkZN3YMsTo8iKBaKhklVZEkkFEoz9ZzaFQrIhIAScH8/4Dv/KGHFx2uyhJWgFBnKraB3/nDX8E8k6pd1Jwi2IAAAAASUVORK5CYII=" alt="">SoundCloud</a></li>
+                                <li class="social-link"><a href="https://instagram.com/2nder.dev" target="_blank"><img src="data:image/png;base64,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" alt="">Instagram</a></li>
+                                <li class="social-link"><a href="https://tiktok.com/@not2nder" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEVUlEQVR4AWJAA7JAXA3E54D4KxD/pxL+CjWzGmwHDuAExCeAGNB7OYBHsgVhdMexsbateG3btm1Ez7btD8+2rdi27WSmu892uIr1j9Fd597qkiA/6KKHUGdjTmPGk9pzUqWlBep+fVHJj5pXRwd6KJUtHZdUD1G/7X+1d1XWJ48xLCqE8WGBTIgIZtSH72FjY4eq5WP/qnfH1Y5su5WPJ5sN5QQZ9ISLAiHpmfw6dxvjtRYtuqPWdu3FQbsBvK+yTwbQUydJourul9hg1rs1x/tVA5R2KgBATAoveaxojRtKqwHodAAg69d/mTtuUovHdxkAQHB4OLNOHEM9dgwKW9va6Oh0AJ+mAQBS9XruS01i+kfvY2XvgLK7AQAkID0uiZ+dVzNFZ9XZAJ43AYj5RYhxKSBJ3CgxIY2ymXuZZ+rQdgB1r56YrVmF9Z0+2D7/NFYXz6EwNm4UQAiOpmzFSWIefAF9WCyUVwIgyAClM/Ywz6QNAEpTUyz376Hvv38wqjCbFRXFXBEqeTQgCM9hLvRWaLC4xQVicAy5UzayxNSRU0Mm89/6Y5R4PY3o8xzlTltbvwMqayscnnqMIbLhNeXFfFpZTp4gIAFieDyFrttx1Vpi5n07QJ7TZqYY1fraXoacZ2THaeuh3Oc4jhE685YBFBoNdvffw7DSfE6WFZEuGLhRggxQ4LoVl2oAn+YB2pUHTBctZFBWCntl47mCUHdmETE5A/HPIMT3vqPIeQuuXQGg0Grp+c4buMv+DtRXAiBV6TG88SnSwiMUTVhP0Oil/DZkDhM05ph3NoBm8CD6R4XiWV6CWBdKwme/IE3ewh8DZ7HQzBFblRYrlQaN/H9LH8/OBTCeMZ2ROWl8U1nRsHrx8L1ED17AOCPLRvJAJwOYLFqAU34WkfoqAMTiUthwkYcdxjWeiO7yvQlACoomb+qm9gPo3N3wyEolyWCoPaFBQDz9MEctBzUaLfby9bJfX4ahzl3iH4HkTVjH5PYCVPd2k4L9ib4x9H4L4L4R7rdHy4J59E+Jw6e8hHqJb3xG+ohltfHerjBUqej77FN8L+hpkCgR9tm3jHaTIeztUPXti/m2LfQL8cO1rJD/6qOlvAIO3s2/A+dgrdK2Pw9oXZ3xTIxH4mb9mZPNOr9/GBsawPiCLFaWF/FVZXnD/4Rv/4Kp23jAcXxrjdN4S6ZQMPLEMUJKirlVRUgECQb89VXkigL1EmNTkNacI2nYEsa32v+1LZlfoz/qdKw/d5a8/HxaUnVqFrd7UT5qNUdshrZl9X7NtuVKlYqdS1eS9sMfUFx2Y42vjY7ULITXP4VFxygcuZKL9iPRKZRtmZKu1g8mfzZZkuXHdNs+fLhkO3mXH0d47G146A049TCSbLhkzBp+GDCD5ea9USsUjRtrYTBp1Whm0kOJu9aKk1aDecR+LI/Zj+OczXBmmzpgodK00mjjo1m9ZldTdfdw2th4fqU7x/NreOenO8G9Vq8AAAAASUVORK5CYII=" alt="">TikTok</a></li>
+                                <li class="social-link"><a href="https://www.youtube.com/channel/UCYneqmkqlHRkbInADINEPVQ" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAP1BMVEX/////z8//n5//kJD/gID/cHD/YGD/v7//39//ICD/AAD/r6//EBD/7+//oKD/MDD/QED/UFD/X1//j4//f396G04EAAAAhklEQVR4AeXQRQLDQAwDQC3bajj5/1dLYb63czYKf8VY50OcBO9swkyUB/SBkfJQlqOXeKJAz/FEQM9zVCqXInqRIy+RC9W+AJDypgCwyoGiV68LkLJFwX6CVJcr8nBwZJgLXMaDAs9RxsMcLE949IQnEnpoeKjEpC25o12OpVwkTURy/JQX1r4RC2S7kZYAAAAASUVORK5CYII=" alt="">YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="releases">
+                    <h3>Lançamentos Populares</h3>
+                    <div class="albums">
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/4FZW3V4IAITzPmEJReppQd" target="_blank">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02f10b0a99fe8323b08b1010dc" alt="Capa do Album EMOTIONALCORE">
+                            <h4>EMOTIONALCORE <span style="color: var(--grey);">• 2024 - Álbum</span></h4>
+                        </a>
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/1Mkazs5hL3ILMQ2V3JCWLW" target="_blank">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2735477a67dab86860457f32b5c" alt="Capa do Single Unfortunately it's over">
+                            <h4>Unfortunately, it's over <span style="color: var(--grey);">• 2024 - Single</span></h4>
+                        </a>
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/7ASlSIdsnTAcw6Xs9iBn26" target="_blank">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2730ab08e5a2ac1e0abd16f3031" alt="Capa do Single Decline Friend Request">
+                            <h4>Decline Friend Request <span style="color: var(--grey);">• 2024 - Single</span></h4>
+                        </a>
+                        <a class="album" href="https://open.spotify.com/track/04jBrWa00IHk8bZzpl29Sy" target="_blank">
+                            <img src="https://i.scdn.co/image/ab67616d00001e0262e6f0ce5e43d283c6fb1239" alt="Capa do Single Enter THE WIRED!">
+                            <h4>Enter THE WIRED! <span style="color: var(--grey);">• 2024 - Single</span></h4>
+                        </a>
+                        <a class="album" href="https://open.spotify.com/intl-pt/album/1f56il4q78D8PV5g28NG0n" target="_blank">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273d0276af523668ead8ce4c14e" alt="Capa do EP CW-BREAK167">
+                            <h4>CW-BREAK167 <span style="color: var(--grey);">• 2024 - EP</span></h4>
+                        </a>
+                    </div>
+                </section>
+                <hr>
+                <section id="about" class="about">
+                    <h3>Sobre</h3>
+                    <p style="text-align: justify;">Ander, not2nder/2nder, é um produtor brasileiro, inspirado pelos maiores artistas do gênero 
+                        <a href="https://en.wikipedia.org/wiki/Breakcore" target="_blank">Breakcore/Jungle</a> como 
+                        <a href="https://open.spotify.com/artist/30F64wQIHvLiFTGaNZ73nU">SWRSLVT</a>/
+                        <a href="https://open.spotify.com/artist/79W7uIUU51RwgRFeYeRrP6">Cynthoni</a>, 
+                        <a href="https://open.spotify.com/artist/39kuwM2oBNmrM3kEYVmk2X">TOKYOPILL</a> e produtores brasileiros como 
+                        <a href="https://open.spotify.com/artist/5Guop61cuV4JDAKS4bY64g">Tsury</a>, 
+                        <a href="https://open.spotify.com/artist/7f2w3rg7H8wMjSCu5gBntf">Wired Lau</a> e 
+                        <a href="https://open.spotify.com/artist/6LkHvIBzMUugKXmM853eqC">Starmoon</a>. 
+                        Sua música é inspirada pelos gêneros da música eletrônica Drum and Bass, Breakcore, Jungle, 
+                        Glitchcore, Speedcore e música ambiente. Ganhou destaque no cenário do breakcore brasileiro ao 
+                        fazer colaborações com artistas conhecidos. Seu último lançamento 
+                        <a target="_blank" href="https://open.spotify.com/intl-pt/album/4FZW3V4IAITzPmEJReppQd">EMOTIONALCORE</a> 
+                        conta com a participação especial de pequenos artistas como 
+                        <a href="https://open.spotify.com/artist/26Du4WdmjrKTY0g1tkSMCg" target="_blank">JSON</a> e 
+                        <a href="https://open.spotify.com/artist/7w0isWdoD7ziEaNEBnDMfk" target="_blank">Emvii</a>
+                        . Sua carreira se iniciou com seu primeiro EP de 4 faixas, 
+                        <a href="https://open.spotify.com/album/1f56il4q78D8PV5g28NG0n" target="_blank">CW-BREAK167</a>.</p>
+                </section>
+            </main>
+            <aside>
+                <h3>Faixas Populares</h3>
+                <ul class="track-list">
+                    <li>
+                        <a class="track-item" href="https://open.spotify.com/intl-pt/album/1Mkazs5hL3ILMQ2V3JCWLW" target="_blank">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e02f121f08edc802ab1a4872419" alt="Imagem Faixa Unfortunately, it's over">
+                                <span href="">Unfortunately, it's over</span>
+                            </div>
+                            <span style="color: var(--grey);">2:08</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="track-item" href="https://open.spotify.com/intl-pt/track/4qLV1PmJxZnb9FmJRN4RJe" target="_blank">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e02f10b0a99fe8323b08b1010dc" alt="Imagem Faixa /// R a z o r b l a d e s ///">
+                                <span href="">/// R a z o r b l a d e s ///</span>
+                            </div>
+                            <span style="color: var(--grey);">0:52</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a  href="https://open.spotify.com/track/032AlZoZg9c7jX53UtPy21" class="track-item" target="_blank">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e020ab08e5a2ac1e0abd16f3031" alt="Imagem Faixa Decline Friend Request">
+                                <span href="">Decline Friend Request</span>
+                            </div>
+                            <span style="color: var(--grey);">2:33</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="track-item" href="https://open.spotify.com/track/0ZJjeQw01v8Yb3Mgfhk4OZ" target="_blank">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e02f10b0a99fe8323b08b1010dc" alt="Imagem Faixa Love Letter">
+                                <span href="">Love Letter (Feat. Tsury)</span>
+                            </div>
+                            <span style="color: var(--grey);">2:33</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="track-item" href="https://open.spotify.com/track/0zHQXyCYVViVPabL0URBJj" target="_blank">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026f33411a3d78fd83d7c45f51" alt="Imagem faixa Commodore64">
+                                <span href="">Commodore64</span>
+                            </div>
+                            <span style="color: var(--grey);">1:50</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <h3>Artistas Recomendados</h3>
+
+                <ul class="artist-list">
+                    <li>
+                        <a href="https://open.spotify.com/artist/5Guop61cuV4JDAKS4bY64g" target="_blank" class="artist-item">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616100005174a16a0fdcc517eba11f274f2c" alt="Imagem Artista Tsury">
+                                <span>Tsury</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/6LkHvIBzMUugKXmM853eqC" target="_blank" class="artist-item">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616100005174cd73fc6990a3ca70ad828e1a" alt="Imagem Artista Starmoon">
+                                <span>Starmoon</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/7f2w3rg7H8wMjSCu5gBntf" target="_blank" class="artist-item">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab676161000051747d33be98742131831fea4cc8" alt="Imagem Artista Wired Lau">
+                                <span>Wired Lau</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/30F64wQIHvLiFTGaNZ73nU" target="_blank" class="artist-item">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab676161000051748a1271f7f32e5202924ebff2" alt="Imagem Artista Sewerslvt">
+                                <span>Sewerslvt</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/79W7uIUU51RwgRFeYeRrP6" target="_blank" class="artist-item">
+                            <div>
+                                <img src="https://i.scdn.co/image/ab67616100005174b02b8cf61051c89d9c8e109b" alt="Imagem Artista Cynthoni">
+                                <span>Cynthoni</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <!-- Footer da página -->
+        <footer>
+            <p style="font-weight: 400;"> &copy; IFPB 2024. Sob Lincença Exclusiva do Professor Jobson Carvalho e total liberdade criativa da equipe. Nem todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
