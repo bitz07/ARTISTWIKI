@@ -1,0 +1,61 @@
+/* normalize.css -> configuraçao padrao para todos os elementos */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import 'variables.css';
+
+html, body {
+    height: 100%;
+    background-color: var(--white);
+
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    border: none;
+    margin: 0;
+
+    font-family: "Source Sans 3", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+
+    -webkit-user-drag: none;
+}
+
+h1,h2,h3,h4,p,span,a {
+    line-height: 1.6rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid var(--grey);
+    margin-block: 0.5rem;
+}
+
+img {
+    -webkit-user-select: none;
+}
+
+section.about a {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
